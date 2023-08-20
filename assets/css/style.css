@@ -1,0 +1,240 @@
+/* Portfilio Styling Sheet */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Specifies header properties: color gradient, size, and how items within
+header are to be displayed */
+header {
+    height: 5rem;
+    background: linear-gradient(to bottom, #8c968c, #Faf5f0);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    width: 100%;
+
+}
+
+    /* Main 'Name' title properties */
+    .overlay-title {
+        font-size: 2.8rem;
+        font-weight: bold;
+        color: black;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 13px 27px; 
+        border: 2px solid #edabb2;
+        margin: 1rem;
+        min-width: 370px;
+    }
+    /* Specifies how the navigation bar items will be displayed, 
+    how they will look, and introducing a bottom border when 
+    hovering over an item */
+    nav {
+        padding-top: 3px;
+    }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: .5rem .75rem;
+            font-size: 22px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        /* any <a> present on screen will have a bottom line appear
+        during hover action */
+        a:hover {
+            border-bottom: 1px solid black;
+        }
+
+/* Properties consistent through body of code */
+body {
+    background-color: #Faf5f0;
+    overflow: scroll;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+    /* SPecifies how the banner/home screen elements will be displayed
+    within in and adding space before start of the about me section */
+    .home-screen{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap-reverse;
+        margin-bottom: 6rem;
+    }
+    #headline {
+        font-size: 4.5rem;
+        color: #132a20;
+        margin: 7.5rem 0 0 13rem;
+    }
+    /* Properties of profile picture */
+    .headshot {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        width: 30%;
+        margin-right: 7.5%;
+    }
+        img {
+            width: 100%;
+            border-radius: 12px;
+        }
+ 
+/* Specifies how about me and works/projects section will be displayed */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ /* Specifies properties of about me section: border, padding,
+ and display of text */
+    .about {
+        margin: 5.5rem 4rem;
+        border: 3px solid #ad7c80;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        font-size: 1rem;
+    } 
+
+        body h1 {
+        font-size: 4rem;
+        margin: 3%;
+        }
+
+        #about-me {
+        margin: 4%;
+        font-size: 19px;
+        }
+/* Specifies how each project in works section will be displayed
+and the coloring being added to border, background, and text */
+    #works-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+        .work-layer {
+            display: flex;
+            width: 100%;
+            margin: 1rem 2.5rem;
+            justify-content: space-between;
+        }
+
+        .work {
+            color: #132a20;
+            padding: 7rem 4rem;  
+            background-color: #FDE9EA;
+            border: 4px solid black;
+            text-align: center;
+            width: 35%;
+        }
+        /* Making the first project displayed to take up more space than
+        other elements in the section */
+        #one {
+            color: #132a20;
+            padding: 10rem;
+            background-color: #FDE9EA;
+            border: 6px solid #132a20;
+            width: 100%;
+            text-align: center;
+            margin: 4rem 2rem;
+
+        }
+
+/* Specifies properties of contact me box: ensuring it remains centered, 
+padding, border, and coloring. */
+.contact {
+    display: flex;
+    justify-content: center;
+    width: 15rem;
+    padding: 2rem;
+    border: 4px solid #8c968c;
+    text-decoration: none;
+    margin-top: 30px
+}
+/* How each list item will be displayed within the contact me box */
+    .contact ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        #contact-title {
+            margin-bottom: 15%;
+        }
+
+        #phone {
+            font-size: 23px;
+            margin-bottom: 10%;
+        }
+        #email {
+            font-size: 23px;
+        }
+
+/* Matching color gradient for bottom of screen */
+footer {
+    height: 5rem;
+    background: linear-gradient(#Faf5f0,#8c968c)
+}
+
+/* Changes to display and box properties when 
+using screen 320-550px (smartphone) */
+@media (min-width : 320px) and (max-width : 550px) {
+    .home-screen {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #one {
+        padding: 2rem;
+        justify-content: center;
+        margin: 0;
+        border: 1.75px solid black;
+    }
+    .work-layer {
+        margin: 0;
+    }
+    .work {
+        padding: 3rem 2rem;
+        border: 1.75px solid black;
+        margin-bottom: 3px;
+    }
+    #headline {
+        font-size: 1rem;
+    }
+    .overlay-title {
+        padding: 13px 0px;
+        text-align: center;
+        margin: 1rem 0 1rem 0;
+    }
+}
+
+/* Changes to display and box properties when 
+using screen 550-980px */
+@media (max-width: 980px) {
+    header {
+        margin-bottom: 150px;
+        flex-direction: column;
+    }
+    #one {
+        font-size: 20px;
+        margin: 1rem 0;
+    }
+    .headshot {
+        width: 80%;
+        margin-left: 6%;
+    }
+    #headline {
+        margin: 2rem 0 0 3.5rem;
+        
+    }
+    .work-layer {
+        margin: 0;
+    }
+    #headline {
+        font-size: 3.75rem;
+    }
+}
