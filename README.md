@@ -11,7 +11,7 @@ There are no installation needs to interact with this application. A user will s
 
 ## Usage
 
-The primary use of this website is to learn all about me! Learn about how I found my way into computer sceince through my About Me section and through reviewing my LinkedIn profile. See my skills put to the test in the works section of this website, where (in the coming future) you are able to learn of applications I have created. After having the chance to get to know me, you're able to give me a call (not currently active) or send me an email to introduce yourself and provide feedback (because I LOVE feedback!).
+The primary use of this website is to learn all about me! Learn about how I found my way into computer sceince through my About Me section and through reviewing my LinkedIn profile. See my skills put to the test in the Projects section of this website, where you are able to interact with sites I have written or extended, and the GitHub link to my first collarorative project. After having the chance to get to know me, you're able to give me a call (not currently active) or send me an email to introduce yourself and provide feedback (because I LOVE feedback!).
 
 ![Full Page on Laptop Screen](./assets/images/page.png)
 
